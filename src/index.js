@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/** Router */
+import App from './App';
+
 const title = 'STARTER PACK BY MEITOEY';
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <App />,
   document.getElementById('app') 
 );
 
