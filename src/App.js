@@ -2,14 +2,10 @@ import React from 'react';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
-// import Home from './modules/Home';
-// import About from './modules/About';
+import Home from './modules/Home';
+import Core from './modules/Core';
+import About from './modules/About';
 import NotFound from './modules/NotFound';
-
-
-const Home = () => <p>Home</p>;
-const About = () => <p>About</p>;
-const Topics = () => <p>Topics</p>;
 
 const App = () => {
     return (
@@ -23,15 +19,15 @@ const App = () => {
                         <Link to="/about">About</Link>
                         </li>
                         <li>
-                        <Link to="/topics">Topics</Link>
+                        <Link to="/core">Topics</Link>
                         </li>
                     </ul>
 
                      <hr />
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={Core} />
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
-                    <Route path="/topics" component={Topics} />
+                    <Route path="/core" component={Core} />
                 </div>
             </Router>
     );
