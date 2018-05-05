@@ -1,6 +1,4 @@
-import home from '../modules/Home/redux/reducer';
-import { combineReducers } from 'react-redux';
+import { combineReducers } from 'redux';
+import core from '../modules/Core/redux/reducer';
 
-export default combineReducers({
-    home,
-});
+export default combineReducers({core});

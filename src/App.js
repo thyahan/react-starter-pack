@@ -3,6 +3,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 import Home from './modules/Home';
+import Core from './modules/Core';
 import About from './modules/About';
 import NotFound from './modules/NotFound';
 
@@ -17,12 +18,16 @@ const App = () => {
                         <li>
                         <Link to="/about">About</Link>
                         </li>
+                        <li>
+                        <Link to="/core">Topics</Link>
+                        </li>
                     </ul>
 
                      <hr />
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={Core} />
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
+                    <Route path="/core" component={Core} />
                 </div>
             </Router>
     );
