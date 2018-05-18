@@ -1,0 +1,13 @@
+.area-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    margin: 0px;
+    .input-field {
+        min-width: 400px;
+        min-height: 600px;
+        padding: 16px;
+        border: 1px solid #CCC;
+        border-radius: 3px;    }
+}
